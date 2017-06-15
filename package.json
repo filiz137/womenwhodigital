@@ -1,0 +1,24 @@
+{
+  "name": "womenwhodigital",
+  "version": "1.0.0",
+  "description": "Find twitter profile directory of inspiring coders women",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://filiz137@github.com/filiz137/womenwhodigital.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filiz137/womenwhodigital/issues"
+  },
+  "homepage": "https://github.com/filiz137/womenwhodigital#readme",
+  "dependencies": {
+    "firebase": "^4.1.2",
+    "firebase-admin": "^5.0.0",
+    "twitter": "^1.7.1"
+  }
+}
