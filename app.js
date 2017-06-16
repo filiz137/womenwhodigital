@@ -4,9 +4,10 @@ var client = new Twitter({
   consumer_secret: 'zmUjcR6vvMoGNYWjru4DT8c87YtpguIRfCAi11ur03vS0UvgWg',
   bearer_token: 'AAAAAAAAAAAAAAAAAAAAACBP1AAAAAAAEtiR1417kioVjU5SeevBNie97bM%3DApyAQpJ3pDGYkM3kUpBoAeoa3lzY9iUE3Rt6xskm6iD5ntfAqd'
 });
+var Autolinker = require( 'autolinker' );
 
-
-var handle = "tolga_egilmezel";
+var handle = "Tolga_Egilmezel";
+handle = handle.toLowerCase();
 
 client.get('users/show', {'screen_name': handle}, function(error, response) {
   if (!error) {
@@ -18,6 +19,11 @@ client.get('users/show', {'screen_name': handle}, function(error, response) {
     var imageUrl = response.profile_image_url_https;
     var location = response.location;
     var profileColor = response.profileColor;
+
+    imageUrl = response.profile_image_url_https.replace("_normal", "_400x400");
+
+    
+
 
   }
 });
